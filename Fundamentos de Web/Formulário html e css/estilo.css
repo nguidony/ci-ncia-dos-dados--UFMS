@@ -1,0 +1,182 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background: #ffffff; 
+}
+
+.form-container {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+fieldset {
+    border: 1px solid #ffffff; /
+    padding: 10px; 
+    margin-bottom: 20px; /
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; 
+}
+
+.label-field {
+    display: block; 
+    font-weight: bold; 
+    margin-bottom: 5px; 
+    color: #333; 
+}
+
+
+.form-group input,
+.form-group select {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+
+.dados-de-contato {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+
+.dados-de-contato .form-group {
+    margin-bottom: 0; 
+}
+.radio-group {
+    display: flex;
+    gap: 1em; 
+    align-items: center;
+}
+
+.radio-group label {
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 0.4em;
+}
+
+.login-group {
+    display: flex;
+    justify-content: space-between; 
+    gap: 1em; 
+    margin-top: 1em; 
+}
+
+.login-item {
+    display: flex;
+    flex-direction: column; 
+    flex: 1; 
+}
+
+.login-item label {
+    font-weight: bold;
+    margin-bottom: 0.5em; 
+}
+
+.login-item input {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.dados-de-cadastro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; 
+    padding-top: 1em;
+}
+
+
+.dados-de-cadastro .cadastro-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45%;
+}
+
+.dados-de-cadastro .cadastro-item label {
+    font-weight: bold;
+    margin-bottom: 5px; 
+    color: #333;
+}
+
+.dados-de-cadastro .cadastro-item input,
+.dados-de-cadastro .cadastro-item select {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+}
+
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1em; 
+    margin-top: 1em;
+}
+
+
+.checkbox-group label {
+    display: flex;
+    align-items: center; 
+    font-size: 0.95em;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 0.4em; 
+}
+
+button {
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 1em; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s;
+    margin-right: 10px; 
+}
+
+
+button.confirmar {
+    background-color: #007BFF; 
+    color: #fff; 
+}
+
+button.confirmar:hover {
+    background-color: #0056b3; 
+    transform: translateY(-1px); 
+}
+
+
+button.retornar {
+    background-color: #ccc; 
+    color: #333; 
+}
+
+button.retornar:hover {
+    background-color: #aaa; 
+    transform: translateY(-1px); 
+
+
+button:disabled {
+    background-color: #ddd; 
+    cursor: not-allowed; 
+}

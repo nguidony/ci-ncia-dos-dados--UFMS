@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <center>
+            <img src="logo.png">
+        </center>
+        <form class="form-container" method="post" action="cadastro.html">
+            <fieldset class="dados-pessoais">
+                <div class="form-group">
+                    <label for="name-field" class="label-field">Nome completo</label>
+                    <input type="text" placeholder="Digite seu nome completo" id="name-field">
+                </div>
+                <div class="form-group">
+                    <label for="cpf-field" class="label-field">CPF</label>
+                    <input type="text" placeholder="Digite o seu CPF, apenas números" id="cpf-field" maxlength="11" pattern="\d{11}" required inputmode="numeric">
+                </div>
+                <div class="form-group">
+                    <label for="email-field" class="label-field">E-mail</label>
+                    <input type="email" placeholder="Digite o seu e-mail" id="email-field">
+                </div>
+                <div class="form-group">
+                    <label for="website-field" class="label-field">Website</label>
+                    <input type="url" placeholder="Digite o seu website" id="website-field">
+                </div>
+            </fieldset>
+                           
+                <div class="form-group">
+                    <label for="endereco-field" class="label-field">Endereço</label>
+                    <input type="text" placeholder="Digite o seu endereço" id="endereco-field">
+                </div>
+                <fieldset class="dados-de-contato">
+          
+                <div class="form-group">
+                    <label class="label-field" for="bairro-field">Bairro</label>
+                    <input type="text" placeholder="Digite o seu bairro" id="bairro-field">
+                </div>
+                <div class="form-group">
+                    <label class="label-field" for="cidade-field">Cidade</label>
+                    <input type="text" placeholder="Digite a sua cidade" id="cidade-field">
+                </div>
+                <div class="form-group">
+                    <label class="label-field" for="cep-field">CEP</label>
+                    <input type="text" placeholder="Digite o CEP, apenas números" id="cep-field" maxlength="8" pattern="\d{8}" required inputmode="numeric">
+                </div>
+                <div class="form-group">
+                    <label class="label-field" for="uf-field">UF</label>
+                    <select id="uf-field" class="select-state" required>
+                        <option value="" disabled selected>Escolha seu estado</option>
+                        <option value="ac">Acre</option>
+                        <option value="al">Alagoas</option>
+                        <option value="ap">Amapá</option>
+                        <option value="ba">Bahia</option>
+                        <option value="ce">Ceará</option>
+                        <option value="df">Distrito Federal</option>
+                        <option value="es">Espírito Santo</option>
+                        <option value="go">Goiás</option>
+                        <option value="ma">Maranhão</option>
+                        <option value="mt">Mato Grosso</option>
+                        <option value="ms">Mato Grosso do Sul</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="pa">Pará</option>
+                        <option value="pb">Paraíba</option>
+                        <option value="pr">Paraná</option>
+                        <option value="pe">Pernambuco</option>
+                        <option value="pi">Piauí</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="rn">Rio Grande do Norte</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="ro">Rondônia</option>
+                        <option value="rr">Roraima</option>
+                        <option value="sc">Santa Catarina</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="se">Sergipe</option>
+                        <option value="to">Tocantins</option>
+                    </select>
+                </div>
+                    <div class="form-group">
+                    <label class="label-field" for="telefone-field">Telefone
+                    <input type="number" placeholder="Digite o seu número de telefone" id="telefone-field"></label>
+                    </div>
+                    <div class="form-group">
+                    <label class="label-field" for="data-field">Data de Nascimento</label>
+                    <input type="date" placeholder="Digite a data de nascimento" id="data-field">
+                    </div>
+                    <div class="form-group">
+                    <label class="label-field" for="celular-field">Celular</label>
+                    <input type="tel" placeholder="Digite o seu celular" id="celular-field">
+                    </div>
+                    <div class="radio-group">
+                        <label class="label-field" for="sexo-field">Sexo</label>
+                        <input type="radio" name="sexo-field" value="Feminino" required>Feminino
+                        <input type="radio" name="sexo-field" value="Masculino" required>Masculino
+                    </div>
+                    <div class="form-group">
+                    <label class="label-field" for="estadocivil-field">Estado Civil</label>
+                    <select id="estadocivil-field" class="select-estadocivil" required>
+                        <option value="" disabled selected>Escolha seu estado civil</option>
+                        <option value="sol">Solteiro (a)</option>
+                        <option value="cas">Casado (a)</option>
+                        <option value="div">Divorciado (a)</option>
+                        <option value="vi">Viúvo (a)</option>
+                    </select>
+                    <br>
+                    </div>
+                    
+            </fieldset>
+            <div class="login-group">
+                <label class="label-field" for="login-field">Login</label>
+                <input type="text" placeholder="Digite o seu login" id="login-field">
+                <label class="label-field" for="senha-field">Senha</label>
+                <input type="password" placeholder="Digite a sua senha" id="senha-field">
+                </div>
+                <br>        
+            <fieldset class="dados-de-cadastro">
+                    <div class="checkbox-group">
+                    <label class="label-field" for="pesquisa-field">Deseja receber informações sobre os seguintes assuntos abaixo:</label>
+                
+                    <label><input type="checkbox" name="info" value="tecnologia"> Tecnologia</label>
+                    <label><input type="checkbox" name="info" value="esportes"> Esportes</label>
+                    <label><input type="checkbox" name="info" value="auto"> Automóveis</label>
+                    <label><input type="checkbox" name="info" value="culinaria"> Culinária</label>
+                    <label><input type="checkbox" name="info" value="politica"> Política</label>
+                    <label><input type="checkbox" name="info" value="policial"> Policial</label>
+                    <label><input type="checkbox" name="info" value="tempo"> Tempo</label>
+                    <label><input type="checkbox" name="info" value="cultura"> Cultura</label>
+                    <label><input type="checkbox" name="info" value="economia"> Economia</label>
+                    <label><input type="checkbox" name="info" value="jogos"> Jogos</label>
+                    <label><input type="checkbox" name="info" value="educacao"> Educação</label>
+                    <label><input type="checkbox" name="info" value="viagem"> Viagem</label>
+                    <label><input type="checkbox" name="info" value="empregos"> Empregos</label>
+                    <label><input type="checkbox" name="info" value="moda"> Moda e Estilo</label>
+            </div>
+            </fieldset>
+            <br>
+            <div>
+                <input type="checkbox" name="regras" value="regras" > Li as regras de cadastro e autorizo a criação do usuário
+            </div>
+            <br>
+            <button>Confirmar</button>
+            <button>Retornar</button>
+        </form>
+
+    </body>
+</html>
